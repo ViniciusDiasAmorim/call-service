@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\CallServiceFlow.csproj": {}
+    "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\CallServiceFlow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\CallServiceFlow.csproj": {
+    "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\CallServiceFlow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\CallServiceFlow.csproj",
+        "projectUniqueName": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\CallServiceFlow.csproj",
         "projectName": "CallServiceFlow",
-        "projectPath": "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\CallServiceFlow.csproj",
+        "projectPath": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\CallServiceFlow.csproj",
         "packagesPath": "C:\\Users\\vichi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\obj\\",
+        "outputPath": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vichi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.14, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.14, )"

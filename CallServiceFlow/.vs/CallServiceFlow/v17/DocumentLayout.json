@@ -1,29 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\",
+  "WorkspaceRootPath": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\source\\repos\\callserviceflow\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\source\\repos\\callserviceflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vichi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.20.1\\build\\Container.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\source\\repos\\callserviceflow\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\source\\repos\\callserviceflow\\migrations\\20250331195755_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:migrations\\20250331195755_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\services\\bcryptpasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:services\\bcryptpasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\source\\repos\\callserviceflow\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\services\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:services\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\model\\refreshtokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:model\\refreshtokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\services\\identitydatainitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:services\\identitydatainitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\callserviceflow.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:callserviceflow.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\migrations\\20250331195755_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:migrations\\20250331195755_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,81 +58,162 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20250331195755_firstmigration.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\Migrations\\20250331195755_firstmigration.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250331195755_firstmigration.cs",
-              "ToolTip": "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\Migrations\\20250331195755_firstmigration.cs",
-              "RelativeToolTip": "Migrations\\20250331195755_firstmigration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
+              "DocumentIndex": 3,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Services\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Services\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Services\\ApplicationUser.cs",
+              "RelativeToolTip": "Services\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T19:57:56.539Z"
+              "WhenOpened": "2025-04-01T20:38:39.304Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\Context\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Context\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\Context\\AppDbContext.cs",
-              "RelativeToolTip": "Context\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "DocumentIndex": 6,
+              "Title": "RefreshTokenModel.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Model\\RefreshTokenModel.cs",
+              "RelativeDocumentMoniker": "Model\\RefreshTokenModel.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Model\\RefreshTokenModel.cs",
+              "RelativeToolTip": "Model\\RefreshTokenModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T19:44:47.918Z"
+              "WhenOpened": "2025-04-01T20:37:27.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAowGoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T20:34:39.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Services\\JwtService.cs",
+              "RelativeToolTip": "Services\\JwtService.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAA5wGUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T20:33:16.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BCryptPasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Services\\BCryptPasswordHasher.cs",
+              "RelativeDocumentMoniker": "Services\\BCryptPasswordHasher.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Services\\BCryptPasswordHasher.cs",
+              "RelativeToolTip": "Services\\BCryptPasswordHasher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T20:32:35.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IdentityDataInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Services\\IdentityDataInitializer.cs",
+              "RelativeDocumentMoniker": "Services\\IdentityDataInitializer.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Services\\IdentityDataInitializer.cs",
+              "RelativeToolTip": "Services\\IdentityDataInitializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T20:16:31.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CallServiceFlow",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\CallServiceFlow.csproj",
+              "RelativeDocumentMoniker": "CallServiceFlow.csproj",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\CallServiceFlow.csproj",
+              "RelativeToolTip": "CallServiceFlow.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-01T20:16:02.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250331195755_firstmigration.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Migrations\\20250331195755_firstmigration.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250331195755_firstmigration.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Migrations\\20250331195755_firstmigration.cs",
+              "RelativeToolTip": "Migrations\\20250331195755_firstmigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T19:57:56.539Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "Context\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T19:44:47.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\Program.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAACYAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwCcAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T21:11:27.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\appsettings.json",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-03-30T21:11:23.238Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\Dockerfile",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "C:\\Users\\vichi\\source\\repos\\CallServiceFlow\\Dockerfile",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Dockerfile",
               "RelativeToolTip": "Dockerfile",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-30T21:10:55.614Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Container.targets",
-              "DocumentMoniker": "C:\\Users\\vichi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.20.1\\build\\Container.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.20.1\\build\\Container.targets",
-              "ToolTip": "C:\\Users\\vichi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.20.1\\build\\Container.targets",
-              "RelativeToolTip": "..\\..\\..\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.20.1\\build\\Container.targets",
-              "ViewState": "AQIAAMcAAAAAAAAAAAD4v94AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-03-30T21:10:52.679Z",
+              "WhenOpened": "2025-03-30T21:10:55.614Z",
               "EditorCaption": ""
             }
           ]
