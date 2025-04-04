@@ -41,7 +41,8 @@ namespace CallServiceFlow.Services
                 Email = "admin@exemplo.com",
                 EmailConfirmed = true,
                 Nome = "Administrador",
-                DataCriacao = DateTime.Now
+                DataCriacao = DateTime.Now,
+                RefreshToken = ""
             };
 
             // Verifica se o usuário admin já existe
