@@ -14,35 +14,27 @@ namespace CallServiceFlow
         public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            // Add services to the container.
+
             builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-            
-            // Configuração do Identity com bcrypt
+
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
-                // Configurações de senha
                 options.Password.RequiredLength = 8;
                 options.Password.RequireDigit = true;
                 options.Password.RequireUppercase = true;
                 options.Password.RequireLowercase = true;
                 options.Password.RequireNonAlphanumeric = true;
-                // Configurações de usuário
                 options.User.RequireUniqueEmail = true;
-                // Configurações de bloqueio
                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
                 options.Lockout.MaxFailedAccessAttempts = 5;
             })
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders();
 
-            // Registra o hasher personalizado
             builder.Services.AddScoped<IPasswordHasher<ApplicationUser>, BCryptPasswordHasher<ApplicationUser>>();
-
-            // Registra o serviço JWT
             builder.Services.AddScoped<JwtService>();
 
-            // Configuração do JWT
             builder.Services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -59,18 +51,14 @@ namespace CallServiceFlow
                     ValidIssuer = builder.Configuration["JwtSettings:Issuer"],
                     ValidAudience = builder.Configuration["JwtSettings:Audience"],
                     IssuerSigningKey = new SymmetricSecurityKey(
-                        Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:SecretKey"]))
+                        Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
                 };
             });
 
-            // Configuração de autorização baseada em roles
             builder.Services.AddAuthorization(options =>
             {
-                // Política para Admin
                 options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
-                // Política para Técnicos
                 options.AddPolicy("TecnicoAccess", policy => policy.RequireRole("Admin", "Tecnico"));
-                // Política para Clientes
                 options.AddPolicy("ClienteAccess", policy => policy.RequireRole("Admin", "Cliente"));
             });
 
@@ -80,7 +68,6 @@ namespace CallServiceFlow
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -88,41 +75,17 @@ namespace CallServiceFlow
             }
 
             app.UseHttpsRedirection();
-
-            // Adiciona o middleware de autenticação ANTES da autorização
             app.UseAuthentication();
             app.UseAuthorization();
-
             app.MapControllers();
 
-            // Inicializa as roles e o usuário admin
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
-                var context = services.GetRequiredService<AppDbContext>();
-
-                try
-                {
-                    context.Database.OpenConnection();
-                    Console.WriteLine("Conexão bem-sucedida!");
-                    context.Database.CloseConnection();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Erro ao conectar ao banco: {ex.Message}");
-                }
-
                 var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
                 var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
                 await IdentityDataInitializer.SeedData(userManager, roleManager);
-
-                //var services = scope.ServiceProvider;
-                //var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
-                //var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
-
-                //// Chama o método de seed
-                //await IdentityDataInitializer.SeedData(userManager, roleManager);
             }
 
             app.Run();

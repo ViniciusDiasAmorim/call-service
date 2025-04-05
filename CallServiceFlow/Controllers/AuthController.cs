@@ -14,7 +14,6 @@ namespace CallServiceFlow.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly JwtService _jwtService;
@@ -32,11 +31,9 @@ namespace CallServiceFlow.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
-            // Valida o modelo
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            // Cria o usuário
             var user = new ApplicationUser
             {
                 UserName = model.Email,
@@ -45,13 +42,11 @@ namespace CallServiceFlow.Controllers
                 DataCriacao = DateTime.Now
             };
 
-            // Tenta criar o usuário
             var result = await _userManager.CreateAsync(user, model.Password);
 
             if (!result.Succeeded)
                 return BadRequest(result.Errors);
 
-            // Atribui a role Cliente por padrão
             await _userManager.AddToRoleAsync(user, "Cliente");
 
             return Ok(new { message = "Usuário registrado com sucesso!" });
@@ -60,27 +55,22 @@ namespace CallServiceFlow.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
-            // Valida o modelo
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            // Encontra o usuário pelo email
             var user = await _userManager.FindByEmailAsync(model.Email);
 
             if (user == null)
                 return Unauthorized(new { message = "Email ou senha inválidos." });
 
-            // Verifica a senha
             var result = await _signInManager.CheckPasswordSignInAsync(user, model.Password, false);
 
             if (!result.Succeeded)
                 return Unauthorized(new { message = "Email ou senha inválidos." });
 
-            // Atualiza o último acesso
             user.UltimoAcesso = DateTime.Now;
             await _userManager.UpdateAsync(user);
 
-            // Gera o token JWT
             var tokenResponse = await _jwtService.GenerateTokenAsync(user);
 
             return Ok(tokenResponse);

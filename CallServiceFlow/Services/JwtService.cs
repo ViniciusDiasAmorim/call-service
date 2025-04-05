@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using CallServiceFlow.Model;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -20,13 +21,10 @@ namespace CallServiceFlow.Services
 
         public async Task<TokenResponse> GenerateTokenAsync(ApplicationUser user)
         {
-            // Obtém as roles do usuário
             var userRoles = await _userManager.GetRolesAsync(user);
 
-            // Obtém as claims do usuário
             var userClaims = await _userManager.GetClaimsAsync(user);
 
-            // Lista de claims para o token
             var claims = new List<Claim>
         {
             new Claim(JwtRegisteredClaimNames.Sub, user.Id),
@@ -35,37 +33,29 @@ namespace CallServiceFlow.Services
             new Claim("nome", user.Nome)
         };
 
-            // Adiciona roles às claims
             foreach (var role in userRoles)
             {
                 claims.Add(new Claim(ClaimTypes.Role, role));
             }
 
-            // Adiciona claims personalizadas do usuário
             claims.AddRange(userClaims);
 
-            // Chave de assinatura
             var key = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(_configuration["JwtSettings:SecretKey"]));
+                Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
 
-            // Credenciais de assinatura
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-            // Data de expiração
             var expiration = DateTime.UtcNow.AddHours(1);
 
-            // Cria o token
             var token = new JwtSecurityToken(
-                issuer: _configuration["JwtSettings:Issuer"],
-                audience: _configuration["JwtSettings:Audience"],
+                issuer: _configuration["Jwt:Issuer"],
+                audience: _configuration["Jwt:Audience"],
                 claims: claims,
                 expires: expiration,
                 signingCredentials: creds
             );
 
-            // Cria o refresh token
             var refreshToken = GenerateRefreshToken();
-
             
             user.RefreshToken = refreshToken;
             user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
@@ -113,12 +103,12 @@ namespace CallServiceFlow.Services
             {
                 ValidateIssuer = true,
                 ValidateAudience = true,
-                ValidateLifetime = false, // Não validamos a expiração aqui
+                ValidateLifetime = false,
                 ValidateIssuerSigningKey = true,
-                ValidIssuer = _configuration["JwtSettings:Issuer"],
-                ValidAudience = _configuration["JwtSettings:Audience"],
+                ValidIssuer = _configuration["Jwt:Issuer"],
+                ValidAudience = _configuration["Jwt:Audience"],
                 IssuerSigningKey = new SymmetricSecurityKey(
-                    Encoding.UTF8.GetBytes(_configuration["JwtSettings:SecretKey"]))
+                    Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]))
             };
 
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -133,13 +123,5 @@ namespace CallServiceFlow.Services
 
             return principal;
         }
-    }
-
-    // Modelo para resposta de token
-    public class TokenResponse
-    {
-        public string Token { get; set; }
-        public DateTime Expiration { get; set; }
-        public string RefreshToken { get; set; }
     }
 }

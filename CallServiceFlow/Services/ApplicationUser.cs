@@ -8,8 +8,8 @@ namespace CallServiceFlow.Services
         public DateTime DataCriacao { get; set; }
         public DateTime? UltimoAcesso { get; set; }
         public bool Ativo { get; set; } = true;
-        public string RefreshToken { get; set; }
-        public DateTime RefreshTokenExpiryTime { get; set; }
+        public string? RefreshToken { get; set; }
+        public DateTime? RefreshTokenExpiryTime { get; set; }
 
     }
 }
