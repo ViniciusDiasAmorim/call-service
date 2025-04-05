@@ -5,12 +5,12 @@ namespace CallServiceFlow.Model.Enums
     public enum Status
     {
         [Description("Aberto")]
-        Open = 1,
+        Open = 0,
         [Description("Em Andamento")]
-        InProgress = 2,
+        InProgress = 1,
         [Description("Resolvido")]
-        Resolved = 3,
+        Resolved = 2,
         [Description("Cancelado")]
-        Canceled = 4
+        Canceled = 3
     }
 }

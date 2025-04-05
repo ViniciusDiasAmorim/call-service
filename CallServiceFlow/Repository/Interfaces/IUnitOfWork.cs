@@ -4,10 +4,9 @@ namespace CallServiceFlow.Repository.Interfaces
 {
     public interface IUnitOfWork
     {
-        IRepository<Ticket> TicketRepository { get; }
-        IRepository<Customer> CustomerRepository { get; }
-        IRepository<Technical> TechnicalRepository { get; }
-        IRepository<ApplicationUser> ApplicationUserRepository { get; }
-        Task SaveAsync();
+        ITicketRepository TicketRepository { get; }
+        ICustomerRepository CustomerRepository { get; }
+        ITechnicalRepository TechnicalRepository { get; }
+        Task Commit();
     }
 }

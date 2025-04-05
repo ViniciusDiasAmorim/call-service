@@ -8,6 +8,7 @@
         public DateTime CreationDate { get; set; }
         public DateTime? LastAccess { get; set; }
         public bool Active { get; set; } = true;
-        public short? MaxCalls { get; set; }
+        public short? ActiveTickets { get; set; }
+        public short? MaxTickets { get; set; }
     }
 }

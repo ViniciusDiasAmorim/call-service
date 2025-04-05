@@ -7,6 +7,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using BCrypt.Net;
 using CallServiceFlow.Model;
+using CallServiceFlow.Repository.Interfaces;
+using CallServiceFlow.Repository;
 
 namespace CallServiceFlow
 {
@@ -62,6 +64,8 @@ namespace CallServiceFlow
                 options.AddPolicy("TecnicoAccess", policy => policy.RequireRole("Admin", "Tecnico"));
                 options.AddPolicy("ClienteAccess", policy => policy.RequireRole("Admin", "Cliente"));
             });
+
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();

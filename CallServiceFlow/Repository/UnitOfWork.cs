@@ -8,22 +8,31 @@ namespace CallServiceFlow.Repository
     public class UnitOfWork : IUnitOfWork
     {
         private readonly AppDbContext _context;
-        private IRepository<Ticket> _ticketRepository;
-        private IRepository<Customer> _customerRepository;
-        private IRepository<Technical> _technicalRepository;
-        private IRepository<ApplicationUser> _applicationUserRepository;
+        private TicketRepository _ticketRepository;
+        private CustomerRepository _customerRepository;
+        private TechnicalRepository _technicalRepository;
 
         public UnitOfWork(AppDbContext context)
         {
             _context = context;
         }
 
-        public IRepository<Ticket> TicketRepository => _ticketRepository ??= new Repository<Ticket>(_context);
-        public IRepository<Customer> CustomerRepository => _customerRepository ??= new Repository<Customer>(_context);
-        public IRepository<Technical> TechnicalRepository => _technicalRepository ??= new Repository<Technical>(_context);
-        public IRepository<ApplicationUser> ApplicationUserRepository => _applicationUserRepository ??= new Repository<ApplicationUser>(_context);
+        public ITicketRepository TicketRepository
+        {
+            get { return _ticketRepository = _ticketRepository ?? new TicketRepository(_context); }
+        }
 
-        public async Task SaveAsync()
+        public ICustomerRepository CustomerRepository
+        {
+            get { return _customerRepository = _customerRepository ?? new CustomerRepository(_context); }
+        }
+
+        public ITechnicalRepository TechnicalRepository
+        {
+            get { return _technicalRepository = _technicalRepository ?? new TechnicalRepository(_context); }
+        }
+
+        public async Task Commit()
         {
             await _context.SaveChangesAsync();
         }
