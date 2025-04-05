@@ -38,8 +38,8 @@ namespace CallServiceFlow.Controllers
             {
                 UserName = model.Email,
                 Email = model.Email,
-                Nome = model.Nome,
-                DataCriacao = DateTime.Now
+                Name = model.Nome,
+                CreationDate = DateTime.Now
             };
 
             var result = await _userManager.CreateAsync(user, model.Password);
@@ -68,7 +68,7 @@ namespace CallServiceFlow.Controllers
             if (!result.Succeeded)
                 return Unauthorized(new { message = "Email ou senha inválidos." });
 
-            user.UltimoAcesso = DateTime.Now;
+            user.LastAccess = DateTime.Now;
             await _userManager.UpdateAsync(user);
 
             var tokenResponse = await _jwtService.GenerateTokenAsync(user);
@@ -110,9 +110,9 @@ namespace CallServiceFlow.Controllers
             {
                 user.Id,
                 user.Email,
-                user.Nome,
-                user.DataCriacao,
-                user.UltimoAcesso,
+                user.Name,
+                user.CreationDate,
+                user.LastAccess,
                 Roles = roles
             });
         }

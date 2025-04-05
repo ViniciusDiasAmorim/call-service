@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using CallServiceFlow.Model;
+using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 
 namespace CallServiceFlow.Services
@@ -35,8 +36,8 @@ namespace CallServiceFlow.Services
                 UserName = "admin@exemplo.com",
                 Email = "admin@exemplo.com",
                 EmailConfirmed = true,
-                Nome = "Administrador",
-                DataCriacao = DateTime.Now,
+                Name = "Administrador",
+                CreationDate = DateTime.Now,
             };
 
             var user = await userManager.FindByEmailAsync(adminUser.Email);

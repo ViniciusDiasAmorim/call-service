@@ -30,7 +30,7 @@ namespace CallServiceFlow.Services
             new Claim(JwtRegisteredClaimNames.Sub, user.Id),
             new Claim(JwtRegisteredClaimNames.Email, user.Email),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new Claim("nome", user.Nome)
+            new Claim("name", user.Name)
         };
 
             foreach (var role in userRoles)

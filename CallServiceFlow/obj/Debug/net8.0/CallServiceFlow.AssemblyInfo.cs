@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CallServiceFlow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e26d7c9841e61c6b7da836a8a6c7d7802735a40e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2bebda582596d0eea85472fc136a2c9c4116988d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CallServiceFlow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CallServiceFlow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
