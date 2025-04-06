@@ -17,7 +17,7 @@ namespace CallServiceFlow.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateCustomer(CustomerDto customerDto)
+        public async Task<IActionResult> CreateCustomer([FromBody] CustomerDto customerDto)
         {
             var result = await _unitOfWork.CustomerRepository.CreateCustomer(customerDto);
 

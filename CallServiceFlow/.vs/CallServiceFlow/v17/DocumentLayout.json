@@ -7,56 +7,24 @@
       "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\repository\\interfaces\\iticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:repository\\interfaces\\iticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\controllers\\technicalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:controllers\\technicalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\dto\\customerdto\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:dto\\customerdto\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\repository\\technicalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:repository\\technicalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\repository\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:repository\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\dto\\customerdto\\customerresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:dto\\customerdto\\customerresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\dto\\technicaldto\\technicaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:dto\\technicaldto\\technicaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\dto\\technicaldto\\technicalresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:dto\\technicaldto\\technicalresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\repository\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:repository\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\model\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:model\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\dto\\ticketsdto\\createticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:dto\\ticketsdto\\createticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\services\\identitydatainitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C913ECE-9F59-419A-B528-9867D6E0C0E3}|CallServiceFlow.csproj|solutionrelative:services\\identitydatainitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,131 +43,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TechnicalController.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Controllers\\TechnicalController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TechnicalController.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Controllers\\TechnicalController.cs",
-              "RelativeToolTip": "Controllers\\TechnicalController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T15:29:57.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "Controllers\\CustomerController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T15:29:17.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Repository\\CustomerRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\CustomerRepository.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Repository\\CustomerRepository.cs",
-              "RelativeToolTip": "Repository\\CustomerRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T15:28:00.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TechnicalRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Repository\\TechnicalRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\TechnicalRepository.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Repository\\TechnicalRepository.cs",
-              "RelativeToolTip": "Repository\\TechnicalRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T15:26:47.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ICustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Repository\\Interfaces\\ICustomerRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Interfaces\\ICustomerRepository.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Repository\\Interfaces\\ICustomerRepository.cs",
-              "RelativeToolTip": "Repository\\Interfaces\\ICustomerRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T15:26:24.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CustomerResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Dto\\CustomerDTO\\CustomerResponseDto.cs",
-              "RelativeDocumentMoniker": "Dto\\CustomerDTO\\CustomerResponseDto.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Dto\\CustomerDTO\\CustomerResponseDto.cs",
-              "RelativeToolTip": "Dto\\CustomerDTO\\CustomerResponseDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T15:25:40.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CustomerDto.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Dto\\CustomerDTO\\CustomerDto.cs",
-              "RelativeDocumentMoniker": "Dto\\CustomerDTO\\CustomerDto.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Dto\\CustomerDTO\\CustomerDto.cs",
-              "RelativeToolTip": "Dto\\CustomerDTO\\CustomerDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T15:25:24.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TechnicalResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Dto\\TechnicalDTO\\TechnicalResponseDto.cs",
-              "RelativeDocumentMoniker": "Dto\\TechnicalDTO\\TechnicalResponseDto.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Dto\\TechnicalDTO\\TechnicalResponseDto.cs",
-              "RelativeToolTip": "Dto\\TechnicalDTO\\TechnicalResponseDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T15:24:40.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TechnicalDto.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Dto\\TechnicalDTO\\TechnicalDto.cs",
-              "RelativeDocumentMoniker": "Dto\\TechnicalDTO\\TechnicalDto.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Dto\\TechnicalDTO\\TechnicalDto.cs",
-              "RelativeToolTip": "Dto\\TechnicalDTO\\TechnicalDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T15:24:11.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ITicketRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Repository\\Interfaces\\ITicketRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Interfaces\\ITicketRepository.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Repository\\Interfaces\\ITicketRepository.cs",
-              "RelativeToolTip": "Repository\\Interfaces\\ITicketRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T15:10:05.468Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-06T16:23:01.141Z",
               "EditorCaption": ""
             },
             {
@@ -210,48 +61,61 @@
               "RelativeDocumentMoniker": "Controllers\\TicketController.cs",
               "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Controllers\\TicketController.cs",
               "RelativeToolTip": "Controllers\\TicketController.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAASwBkAAABBAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T00:40:46.632Z",
+              "WhenOpened": "2025-04-06T16:12:30.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CreateTicketDto.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Dto\\TicketsDTO\\CreateTicketDto.cs",
-              "RelativeDocumentMoniker": "Dto\\TicketsDTO\\CreateTicketDto.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Dto\\TicketsDTO\\CreateTicketDto.cs",
-              "RelativeToolTip": "Dto\\TicketsDTO\\CreateTicketDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Services\\JwtService.cs",
+              "RelativeToolTip": "Services\\JwtService.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCsAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T15:10:39.852Z",
+              "WhenOpened": "2025-04-06T16:02:31.304Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Ticket.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Model\\Ticket.cs",
-              "RelativeDocumentMoniker": "Model\\Ticket.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Model\\Ticket.cs",
-              "RelativeToolTip": "Model\\Ticket.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAowE8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T15:11:53.847Z",
+              "WhenOpened": "2025-04-06T16:00:57.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TicketRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Repository\\TicketRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\TicketRepository.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Repository\\TicketRepository.cs",
-              "RelativeToolTip": "Repository\\TicketRepository.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCsAAABAAAAA",
+              "DocumentIndex": 5,
+              "Title": "IdentityDataInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Services\\IdentityDataInitializer.cs",
+              "RelativeDocumentMoniker": "Services\\IdentityDataInitializer.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Services\\IdentityDataInitializer.cs",
+              "RelativeToolTip": "Services\\IdentityDataInitializer.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwC8AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T15:09:16.773Z",
+              "WhenOpened": "2025-04-06T16:00:08.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAwwEAAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T15:37:59.467Z",
               "EditorCaption": ""
             }
           ]

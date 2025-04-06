@@ -1,6 +1,7 @@
 ﻿using CallServiceFlow.Dto.Tickets;
 using CallServiceFlow.Repository;
 using CallServiceFlow.Repository.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -18,6 +19,7 @@ namespace CallServiceFlow.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateTicket(CreateTicketDto ticketDto)
         {
            var result = await _unitOfWork.TicketRepository.CreateTicket(ticketDto);
@@ -29,6 +31,7 @@ namespace CallServiceFlow.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateTicketStatus(UpdateStatusTicketDto doneTicketDto)
         {
             var result = await _unitOfWork.TicketRepository.UpdateTicketStatus(doneTicketDto);

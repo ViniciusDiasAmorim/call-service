@@ -24,7 +24,6 @@ namespace CallServiceFlow.Services
                 if (!roleExists)
                 {
                     await roleManager.CreateAsync(new IdentityRole(roleName));
-                    Console.WriteLine($"Role {roleName} criada com sucesso.");
                 }
             }
         }
@@ -52,12 +51,10 @@ namespace CallServiceFlow.Services
 
                     await userManager.AddClaimAsync(adminUser, new Claim("FullAccess", "true"));
 
-                    Console.WriteLine("Usuário administrador criado com sucesso.");
                 }
                 else
                 {
                     var errors = string.Join(", ", result.Errors.Select(e => e.Description));
-                    Console.WriteLine($"Erro ao criar usuário administrador: {errors}");
                 }
             }
         }
