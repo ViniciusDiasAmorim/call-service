@@ -1,4 +1,4 @@
-﻿using CallServiceFlow.Dto;
+﻿using CallServiceFlow.Dto.CustomerDTO;
 using CallServiceFlow.Repository;
 using CallServiceFlow.Repository.Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -23,7 +23,7 @@ namespace CallServiceFlow.Controllers
 
             if (result.ok)
             {
-                return Created("", result.message);
+                return Created(result.message, result.responseDto);
             }
             else
             {

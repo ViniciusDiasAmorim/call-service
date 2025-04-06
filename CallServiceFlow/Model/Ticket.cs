@@ -10,9 +10,12 @@ namespace CallServiceFlow.Model
         public string Description { get; set; }
         public Status Status { get; set; }
         public Priority Priority { get; set; }
-        public Customer Customer { get; set; }
-        public Technical Technical { get; set; }
+        public int CustomerId { get; set; }
+        public int TechnicalId { get; set; }
         public DateTime CreationDate { get; set; }
         public DateTime? CompletionDeadline { get; set; }
+
+        public virtual Customer Customer { get; set; }
+        public virtual Technical Technical { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using CallServiceFlow.Dto;
+﻿using CallServiceFlow.Dto.TechnicalDTO;
 using CallServiceFlow.Repository;
 using CallServiceFlow.Repository.Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -17,12 +17,12 @@ namespace CallServiceFlow.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateTechnical(TechinicalDto techinicalDto)
+        public async Task<IActionResult> CreateTechnical(TechnicalDto techinicalDto)
         {
             var result = await _unitOfWork.TechnicalRepository.CreateTechnical(techinicalDto);
 
             if (result.ok)
-                return Created("", result.message);
+                return Created(result.message, result.responseDto);
             else
                 return BadRequest(result.message);
         }

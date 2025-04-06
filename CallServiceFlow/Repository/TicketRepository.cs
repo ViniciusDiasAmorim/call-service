@@ -1,5 +1,5 @@
 ﻿using CallServiceFlow.Context;
-using CallServiceFlow.Dto;
+using CallServiceFlow.Dto.Tickets;
 using CallServiceFlow.Model;
 using CallServiceFlow.Model.Enums;
 using CallServiceFlow.Repository.Interfaces;
@@ -15,20 +15,14 @@ namespace CallServiceFlow.Repository
             _context = context;
         }
 
-        public async Task<(bool, string)> CreateTicket(TicketDto ticketDto)
+        public async Task<(bool, string, CreateTicketResponseDto)> CreateTicket(CreateTicketDto ticketDto)
         {
-            var customer = await _context.Customers.Where(x => x.Id == ticketDto.CustomerId).FirstOrDefaultAsync();
-            var technical = await _context.Technicals.Where(x => x.Id == ticketDto.TechnicalId).FirstOrDefaultAsync();
+            var maxTickets = _context.Technicals.Where(x => x.Id == ticketDto.TechnicalId && x.Active).FirstOrDefault().MaxTickets;
+            var activedTickets = _context.Tickets.Where(t => t.TechnicalId == ticketDto.TechnicalId && t.Status == Status.Open || t.Status == Status.InProgress).Count();
 
-            if (customer == null)
-                return (false, "Cliente não encontrado");
-
-            if (technical == null)
-                return (false, "Técnico não encontrado");
+            if (activedTickets + 1 > maxTickets)
+                return (false, $"O Técnico ja atingiu o maximo de chamados que pode atender. maximo de chamados: {maxTickets}", null);
             
-            if(technical.ActiveTickets + 1 > technical.MaxTickets)
-                return (false, $"Técnico não pode atender mais chamados ele possui um total de {technical.ActiveTickets} chamados ativos.");
-
             var ticket = new Ticket()
             {
                 Title = ticketDto.Title,
@@ -37,27 +31,56 @@ namespace CallServiceFlow.Repository
                 CompletionDeadline = ticketDto.CompletionDeadline,
                 Status = Status.Open,
                 CreationDate = DateTime.Now,
-                Customer = customer,
-                Technical = technical
+                CustomerId = ticketDto.CustomerId,
+                TechnicalId = ticketDto.TechnicalId
             };
 
             try
             {
                 await _context.Tickets.AddAsync(ticket);
                 
-                technical.ActiveTickets += 1;
-
-                _context.Entry(technical).State = EntityState.Modified;
-                _context.Set<Technical>().Update(technical);
-
                 await _context.SaveChangesAsync();
-           
-                return (true, "Chamado criado com sucesso");
+
+                var dtojResponse = new CreateTicketResponseDto()
+                {
+                    Id = ticket.Id,
+                    Title = ticket.Title,
+                    Description = ticket.Description,
+                    Priority = ticket.Priority,
+                    CompletionDeadline = ticket.CompletionDeadline,
+                    CustomerId = ticket.CustomerId,
+                    TechnicalId = ticket.TechnicalId
+                };
+
+                return (true, "Chamado criado com sucesso", dtojResponse);
+
             }
             catch (Exception ex)
             {
-                return (false, $"Erro ao criar chamado: {ex.Message}");
+                return (false, $"Erro ao criar chamado: {ex.Message}", null);
             }
+        }
+
+        public async Task<(bool ok, string message)> UpdateTicketStatus(UpdateStatusTicketDto dto)
+        {
+            var ticket = await _context.Tickets.Where(t => t.Id == dto.TicketId).FirstOrDefaultAsync();
+
+            if (ticket == null) 
+                return (false, "Chamado não encontrado");
+
+            ticket.Status = dto.NewStatus;
+
+            try
+            {
+                _context.Tickets.Update(ticket);
+                await _context.SaveChangesAsync();
+                return (true, "Chamado atualizado com sucesso");
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Erro ao atualizar chamado: {ex.Message}");
+            }
+
         }
     }
 }

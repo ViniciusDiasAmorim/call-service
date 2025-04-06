@@ -1,4 +1,4 @@
-﻿using CallServiceFlow.Dto;
+﻿using CallServiceFlow.Dto.Tickets;
 using CallServiceFlow.Repository;
 using CallServiceFlow.Repository.Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -18,12 +18,23 @@ namespace CallServiceFlow.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateTicket(TicketDto ticketDto)
+        public async Task<IActionResult> CreateTicket(CreateTicketDto ticketDto)
         {
            var result = await _unitOfWork.TicketRepository.CreateTicket(ticketDto);
 
             if(result.ok)
-                return Created("", result.message);
+                return Created(result.message, result.responseDto);
+            else
+                return BadRequest(result.message);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateTicketStatus(UpdateStatusTicketDto doneTicketDto)
+        {
+            var result = await _unitOfWork.TicketRepository.UpdateTicketStatus(doneTicketDto);
+
+            if (result.ok)
+                return Ok(result.message);
             else
                 return BadRequest(result.message);
         }

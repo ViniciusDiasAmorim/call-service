@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CallServiceFlow.Dto
+namespace CallServiceFlow.Dto.CustomerDTO
 {
     public class CustomerDto
     {

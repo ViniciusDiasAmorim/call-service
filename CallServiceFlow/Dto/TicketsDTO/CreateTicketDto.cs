@@ -1,9 +1,9 @@
 ﻿using CallServiceFlow.Model.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace CallServiceFlow.Dto
+namespace CallServiceFlow.Dto.Tickets
 {
-    public class TicketDto
+    public class CreateTicketDto
     {
         [Required]
         public string Title { get; set; }
