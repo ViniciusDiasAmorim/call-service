@@ -9,7 +9,7 @@ namespace CallServiceFlow.Model
         public string Email { get; set; }
 
         [Required]
-        public string Nome { get; set; }
+        public string Name { get; set; }
 
         [Required]
         [MinLength(8)]

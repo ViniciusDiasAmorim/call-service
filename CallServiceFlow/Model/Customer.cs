@@ -6,6 +6,7 @@
         public string Name { get; set; }
         public string Email { get; set; }
         public DateTime CreationDate { get; set; }
-        public List<Ticket> Calls { get; set; } = new List<Ticket>();
+        public bool IsActive { get; set; }
+        public virtual List<Ticket> Calls { get; set; } = new List<Ticket>();
     }
 }

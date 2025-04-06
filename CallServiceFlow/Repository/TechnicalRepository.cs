@@ -39,11 +39,11 @@ namespace CallServiceFlow.Repository
                     MaxCalls = techinical.MaxTickets
                 };
                 
-                return (true, "Técnico criado com sucesso", responseDto);
+                return (true, "Tecnico criado com sucesso", responseDto);
             }
             catch (Exception ex)
             {
-                return (false, $"Erro ao criar técnico: {ex.Message}", null);
+                return (false, $"Erro ao criar tecnico: {ex.Message}", null);
             }
 
         }

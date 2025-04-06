@@ -37,6 +37,7 @@ namespace CallServiceFlow
 
             builder.Services.AddScoped<IPasswordHasher<ApplicationUser>, BCryptPasswordHasher<ApplicationUser>>();
             builder.Services.AddScoped<JwtService>();
+            builder.Services.AddScoped<UserRegistrationService>();
 
             builder.Services.AddAuthentication(options =>
             {
