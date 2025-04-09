@@ -15,6 +15,11 @@ export class LoginComponent {
 
   login() {
     console.log('Login com:', this.username, this.password);
-    // Aqui você pode chamar um service de autenticação
+    let url = 'http://localhost:5226/api/Auth/login';
+    let body = {
+      username: this.username,
+      password: this.password
+    };
+    
   }
 }
