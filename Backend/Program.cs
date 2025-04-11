@@ -72,7 +72,15 @@ namespace CallServiceFlow
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAngularDevClient",
+                    builder => builder
+                        .WithOrigins("http://localhost:4200")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials());
+            });
             var app = builder.Build();
 
             if (app.Environment.IsDevelopment())
@@ -81,6 +89,7 @@ namespace CallServiceFlow
                 app.UseSwaggerUI();
             }
 
+            app.UseCors("AllowAngularDevClient");
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();

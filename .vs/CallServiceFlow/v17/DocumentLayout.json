@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|solutionrelative:backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\backend\\services\\identitydatainitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|solutionrelative:backend\\services\\identitydatainitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\backend\\services\\userregistrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|solutionrelative:backend\\services\\userregistrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Backend\\Program.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Program.cs*",
+              "RelativeToolTip": "Backend\\Program.cs*",
+              "ViewState": "AQIAADQAAAAAAAAAAAAgwFcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T01:23:52.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Controllers\\AuthController.cs*",
+              "RelativeToolTip": "Backend\\Controllers\\AuthController.cs*",
+              "ViewState": "AQIAABIAAAAAAAAAAAAQwCIAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T19:15:07.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IdentityDataInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Services\\IdentityDataInitializer.cs",
+              "RelativeDocumentMoniker": "Backend\\Services\\IdentityDataInitializer.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Services\\IdentityDataInitializer.cs",
+              "RelativeToolTip": "Backend\\Services\\IdentityDataInitializer.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCIAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T19:13:21.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRegistrationService.cs",
+              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Services\\UserRegistrationService.cs",
+              "RelativeDocumentMoniker": "Backend\\Services\\UserRegistrationService.cs",
+              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Services\\UserRegistrationService.cs",
+              "RelativeToolTip": "Backend\\Services\\UserRegistrationService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T19:13:10.243Z"
             }
           ]
         }

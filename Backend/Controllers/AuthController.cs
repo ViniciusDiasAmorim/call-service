@@ -2,6 +2,7 @@
 using CallServiceFlow.Model;
 using CallServiceFlow.Services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -30,6 +31,8 @@ namespace CallServiceFlow.Controllers
             _jwtService = jwtService;
         }
 
+
+        //[EnableCors("AllowAngularDevClient")]
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
