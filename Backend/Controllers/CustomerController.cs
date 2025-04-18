@@ -1,10 +1,8 @@
 ﻿using CallServiceFlow.Dto.CustomerDTO;
 using CallServiceFlow.Model;
-using CallServiceFlow.Repository;
 using CallServiceFlow.Repository.Interfaces;
 using CallServiceFlow.Services;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CallServiceFlow.Controllers
