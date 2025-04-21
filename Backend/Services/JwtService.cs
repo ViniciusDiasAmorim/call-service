@@ -8,7 +8,7 @@ using System.Text;
 
 namespace CallServiceFlow.Services
 {
-    public class JwtService
+    public class JwtService : IJwtService
     {
         private readonly IConfiguration _configuration;
         private readonly UserManager<ApplicationUser> _userManager;
@@ -22,16 +22,15 @@ namespace CallServiceFlow.Services
         public async Task<TokenResponse> GenerateTokenAsync(ApplicationUser user)
         {
             var userRoles = await _userManager.GetRolesAsync(user);
-
             var userClaims = await _userManager.GetClaimsAsync(user);
 
             var claims = new List<Claim>
-        {
-            new Claim(JwtRegisteredClaimNames.Sub, user.Id),
-            new Claim(JwtRegisteredClaimNames.Email, user.Email),
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new Claim("name", user.Name)
-        };
+                {
+                    new Claim(JwtRegisteredClaimNames.Sub, user.Id),
+                    new Claim(JwtRegisteredClaimNames.Email, user.Email),
+                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                    new Claim("name", user.Name)
+                };
 
             foreach (var role in userRoles)
             {
@@ -56,7 +55,7 @@ namespace CallServiceFlow.Services
             );
 
             var refreshToken = GenerateRefreshToken();
-            
+
             user.RefreshToken = refreshToken;
             user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
             await _userManager.UpdateAsync(user);
@@ -67,14 +66,6 @@ namespace CallServiceFlow.Services
                 Expiration = expiration,
                 RefreshToken = refreshToken
             };
-        }
-
-        private string GenerateRefreshToken()
-        {
-            var randomNumber = new byte[32];
-            using var rng = RandomNumberGenerator.Create();
-            rng.GetBytes(randomNumber);
-            return Convert.ToBase64String(randomNumber);
         }
 
         public async Task<TokenResponse> RefreshTokenAsync(string token, string refreshToken)
@@ -95,6 +86,14 @@ namespace CallServiceFlow.Services
             }
 
             return await GenerateTokenAsync(user);
+        }
+
+        private string GenerateRefreshToken()
+        {
+            var randomNumber = new byte[32];
+            using var rng = RandomNumberGenerator.Create();
+            rng.GetBytes(randomNumber);
+            return Convert.ToBase64String(randomNumber);
         }
 
         private ClaimsPrincipal GetPrincipalFromExpiredToken(string token)

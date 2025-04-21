@@ -1,7 +1,7 @@
 ﻿using CallServiceFlow.Dto.Tickets;
 using CallServiceFlow.Dto.TicketsDTO;
 
-namespace CallServiceFlow.Services
+namespace CallServiceFlow.Services.Interfaces
 {
     public interface ITicketService
     {

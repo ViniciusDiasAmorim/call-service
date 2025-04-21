@@ -4,6 +4,7 @@ using CallServiceFlow.Model;
 using CallServiceFlow.Model.Enums;
 using CallServiceFlow.Repository;
 using CallServiceFlow.Repository.Interfaces;
+using CallServiceFlow.Services.Interfaces;
 
 namespace CallServiceFlow.Services
 {

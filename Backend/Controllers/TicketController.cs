@@ -1,5 +1,5 @@
 ﻿using CallServiceFlow.Dto.Tickets;
-using CallServiceFlow.Services;
+using CallServiceFlow.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
