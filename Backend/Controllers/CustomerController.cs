@@ -1,7 +1,6 @@
 ﻿using CallServiceFlow.Dto.CustomerDTO;
 using CallServiceFlow.Model;
-using CallServiceFlow.Repository.Interfaces;
-using CallServiceFlow.Services;
+using CallServiceFlow.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,12 +10,12 @@ namespace CallServiceFlow.Controllers
     [ApiController]
     public class CustomerController : ControllerBase
     {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly UserRegistrationService _userRegistrationService;
+        private readonly ICustomerService _customerService;
+        private readonly IUserRegistrationService _userRegistrationService;
 
-        public CustomerController(IUnitOfWork unitOfWork, UserRegistrationService userRegistrationService)
+        public CustomerController(ICustomerService customerService, IUserRegistrationService userRegistrationService)
         {
-            _unitOfWork = unitOfWork;
+            _customerService = customerService;
             _userRegistrationService = userRegistrationService;
         }
 
@@ -37,7 +36,7 @@ namespace CallServiceFlow.Controllers
             if (!resultAuthRegister.ok)
                 return BadRequest(resultAuthRegister.message);
 
-            var result = await _unitOfWork.CustomerRepository.CreateCustomer(customerDto);
+            var result = await _customerService.CreateCustomer(customerDto);
 
             if (result.ok)
                 return Created(result.message, result.responseDto);

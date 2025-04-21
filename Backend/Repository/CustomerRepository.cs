@@ -1,5 +1,4 @@
 ﻿using CallServiceFlow.Context;
-using CallServiceFlow.Dto.CustomerDTO;
 using CallServiceFlow.Model;
 using CallServiceFlow.Repository.Interfaces;
 
@@ -13,34 +12,9 @@ namespace CallServiceFlow.Repository
             _context = context;
         }
 
-        public async Task<(bool, string, CustomerResponseDto)> CreateCustomer(CustomerDto customerDto)
+        public async Task CreateCustomerAsync(Customer customer)
         {
-            var customer = new Customer()
-            {
-                Name = customerDto.Name,
-                Email = customerDto.Email,
-                CreationDate = DateTime.Now
-            };
-
-            try
-            {
-                await _context.Customers.AddAsync(customer);
-                await _context.SaveChangesAsync();
-
-                var responseDto = new CustomerResponseDto()
-                {
-                    Id = customer.Id,
-                    Name = customer.Name,
-                    Email = customer.Email
-                };
-
-                return (true, "Cliente criado com sucesso", responseDto);
-            }
-            catch (Exception ex)
-            {
-                return (false, $"Erro ao criar cliente: {ex.Message}", null);
-            }
-
+            await _context.AddAsync(customer);
         }
     }
 }

@@ -28,7 +28,8 @@ namespace CallServiceFlow
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<ITicketService, TicketService>();
             builder.Services.AddScoped<ITechnicalService, TechnicalService>();
-
+            builder.Services.AddScoped<ICustomerService, CustomerService>();
+           
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
                 options.Password.RequiredLength = 8;
