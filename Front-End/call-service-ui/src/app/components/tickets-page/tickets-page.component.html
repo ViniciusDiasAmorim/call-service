@@ -1,0 +1,6 @@
+<div *ngFor="let ticket of tickets" class="ticket-item">
+    <h3>{{ ticket.title }}</h3>
+    <p>{{ ticket.description }}</p>
+    <p>Status: {{ ticket.status }}</p>
+    <button (click)="viewTicket(ticket.id)">View Ticket</button>
+  </div>
