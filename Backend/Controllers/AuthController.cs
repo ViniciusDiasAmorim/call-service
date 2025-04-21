@@ -14,12 +14,12 @@ namespace CallServiceFlow.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
-        private readonly JwtService _jwtService;
+        private readonly IJwtService _jwtService;
 
         public AuthController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            JwtService jwtService)
+            IJwtService jwtService)
         {
             _userManager = userManager;
             _signInManager = signInManager;

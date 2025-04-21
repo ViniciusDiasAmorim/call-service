@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace CallServiceFlow.Services
+namespace CallServiceFlow.Infrastructure
 {
     public class BCryptPasswordHasher<TUser> : IPasswordHasher<TUser> where TUser : class
     {

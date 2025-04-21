@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 
-namespace CallServiceFlow.Services
+namespace CallServiceFlow.Infrastructure
 {
     public static class IdentityDataInitializer
     {

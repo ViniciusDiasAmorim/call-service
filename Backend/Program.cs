@@ -10,6 +10,7 @@ using CallServiceFlow.Model;
 using CallServiceFlow.Repository.Interfaces;
 using CallServiceFlow.Repository;
 using CallServiceFlow.Services.Interfaces;
+using CallServiceFlow.Infrastructure;
 
 namespace CallServiceFlow
 {
@@ -21,6 +22,12 @@ namespace CallServiceFlow
 
             builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            builder.Services.AddScoped<IPasswordHasher<ApplicationUser>, BCryptPasswordHasher<ApplicationUser>>();
+            builder.Services.AddScoped<IJwtService, JwtService>();
+            builder.Services.AddScoped<IUserRegistrationService, UserRegistrationService>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<ITicketService, TicketService>();
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
@@ -35,10 +42,6 @@ namespace CallServiceFlow
             })
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders();
-
-            builder.Services.AddScoped<IPasswordHasher<ApplicationUser>, BCryptPasswordHasher<ApplicationUser>>();
-            builder.Services.AddScoped<JwtService>();
-            builder.Services.AddScoped<UserRegistrationService>();
 
             builder.Services.AddAuthentication(options =>
             {
@@ -67,9 +70,6 @@ namespace CallServiceFlow
                 options.AddPolicy("TecnicoAccess", policy => policy.RequireRole("Admin", "Tecnico"));
                 options.AddPolicy("ClienteAccess", policy => policy.RequireRole("Admin", "Cliente"));
             });
-
-            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-            builder.Services.AddScoped<ITicketService, TicketService>();
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();

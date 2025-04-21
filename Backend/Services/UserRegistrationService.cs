@@ -1,11 +1,12 @@
 ﻿using CallServiceFlow.Model;
 using CallServiceFlow.Repository.Interfaces;
+using CallServiceFlow.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CallServiceFlow.Services
 {
-    public class UserRegistrationService
+    public class UserRegistrationService : IUserRegistrationService
     {
         private readonly UserManager<ApplicationUser> _userManager;
 
@@ -39,7 +40,7 @@ namespace CallServiceFlow.Services
             return (true, "Usuário registrado com sucesso!");
         }
 
-        public (bool ok, string message)ValidateRegisterModel(Register model)
+        private (bool ok, string message)ValidateRegisterModel(Register model)
         {
             if (string.IsNullOrEmpty(model.Email))
                 return (false, "Email não pode ser vazio");
