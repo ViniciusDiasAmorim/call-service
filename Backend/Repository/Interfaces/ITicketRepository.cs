@@ -6,11 +6,13 @@ namespace CallServiceFlow.Repository.Interfaces
 {
     public interface ITicketRepository : IRepository<Ticket>
     {
-        Task<(bool ok, string message, CreateTicketResponseDto responseDto)> CreateTicket(CreateTicketDto ticketDto);
-        Task<(bool ok, string message)> UpdateTicketStatus(UpdateStatusTicketDto doneTicketDto);
-        Task<TicketDto> GetTicketById(int id);
-        Task<IEnumerable<TicketDto>> GetAllTickets();
-        Task<(bool ok, string message)> DeleteTicket(int id);
-        Task<IEnumerable<TicketDto>> GetTicketsByTechnical(int technicalId);
+        Task AddTicketAsync(Ticket ticket);
+        Task<Ticket> GetTicketByIdAsync(int id);
+        Task<IEnumerable<Ticket>> GetAllTicketsAsync();
+        Task<IEnumerable<Ticket>> GetTicketsByTechnicalAsync(int technicalId);
+        Task<int> GetActiveTicketsCountByTechnicalAsync(int technicalId);
+        Task<Technical> GetTechnicalByIdAsync(int technicalId);
+        void UpdateTicket(Ticket ticket);
+        Task SaveChangesAsync();
     }
 }

@@ -1,11 +1,7 @@
 ﻿using CallServiceFlow.Dto.Tickets;
-using CallServiceFlow.Repository;
-using CallServiceFlow.Repository.Interfaces;
+using CallServiceFlow.Services;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
 
 namespace CallServiceFlow.Controllers
 {
@@ -13,17 +9,18 @@ namespace CallServiceFlow.Controllers
     [ApiController]
     public class TicketController : ControllerBase
     {
-        private readonly IUnitOfWork _unitOfWork;
-        public TicketController(IUnitOfWork unitOfWork)
+        private readonly ITicketService _ticketService;
+
+        public TicketController(ITicketService ticketService)
         {
-            _unitOfWork = unitOfWork;
+            _ticketService = ticketService;
         }
 
         [HttpPost]
         [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> CreateTicket(CreateTicketDto ticketDto)
         {
-            var result = await _unitOfWork.TicketRepository.CreateTicket(ticketDto);
+            var result = await _ticketService.CreateTicketAsync(ticketDto);
 
             if (result.ok)
                 return Created(result.message, result.responseDto);
@@ -35,7 +32,7 @@ namespace CallServiceFlow.Controllers
         [Authorize(Roles = "Admin,Tecnico")]
         public async Task<IActionResult> UpdateTicketStatus(UpdateStatusTicketDto doneTicketDto)
         {
-            var result = await _unitOfWork.TicketRepository.UpdateTicketStatus(doneTicketDto);
+            var result = await _ticketService.UpdateTicketStatusAsync(doneTicketDto);
 
             if (result.ok)
                 return Ok(result.message);
@@ -51,7 +48,7 @@ namespace CallServiceFlow.Controllers
             //var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             //var userRole = User.FindFirstValue(ClaimTypes.Role);
 
-            var result = await _unitOfWork.TicketRepository.GetTicketById(id);
+            var result = await _ticketService.GetTicketByIdAsync(id);
 
             if (result != null)
                 return Ok(result);
@@ -63,7 +60,7 @@ namespace CallServiceFlow.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllTickets()
         {
-            var result = await _unitOfWork.TicketRepository.GetAllTickets();
+            var result = await _ticketService.GetAllTicketsAsync();
 
             return Ok(result);
         }
@@ -72,7 +69,7 @@ namespace CallServiceFlow.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteTicket(int id)
         {
-            var result = await _unitOfWork.TicketRepository.DeleteTicket(id);
+            var result = await _ticketService.DeleteTicketAsync(id);
 
             if (result.ok)
                 return Ok(result.message);
@@ -84,7 +81,7 @@ namespace CallServiceFlow.Controllers
         [Authorize(Roles = "Admin,Tecnico")]
         public async Task<IActionResult> GetTicketsByTechnical(int technicalId)
         {
-            var result = await _unitOfWork.TicketRepository.GetTicketsByTechnical(technicalId);
+            var result = await _ticketService.GetTicketsByTechnicalAsync(technicalId);
 
             return Ok(result);
         }

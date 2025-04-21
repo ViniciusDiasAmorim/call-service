@@ -68,6 +68,7 @@ namespace CallServiceFlow
             });
 
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<ITicketService, TicketService>();
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
