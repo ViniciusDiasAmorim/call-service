@@ -27,7 +27,7 @@ namespace CallServiceFlow.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginModel model)
+        public async Task<IActionResult> Login([FromBody] Login model)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);

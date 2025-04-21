@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "Backend\\Controllers\\CustomerController.cs",
               "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "Backend\\Controllers\\CustomerController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T23:49:39.135Z",
               "EditorCaption": ""
@@ -67,8 +67,7 @@
               "RelativeToolTip": "Backend\\Context\\AppDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T23:47:11.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T23:47:11.284Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "Backend\\Services\\BCryptPasswordHasher.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T23:45:53.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T23:45:53.913Z"
             },
             {
               "$type": "Document",
@@ -105,8 +103,7 @@
               "RelativeToolTip": "Backend\\Controllers\\AuthController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T19:15:07.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T19:15:07.026Z"
             },
             {
               "$type": "Document",
@@ -118,8 +115,7 @@
               "RelativeToolTip": "Backend\\Services\\IdentityDataInitializer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T19:13:21.03Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T19:13:21.03Z"
             },
             {
               "$type": "Document",
@@ -131,8 +127,7 @@
               "RelativeToolTip": "Backend\\Services\\UserRegistrationService.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T19:13:10.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T19:13:10.243Z"
             }
           ]
         }

@@ -24,7 +24,7 @@ namespace CallServiceFlow.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateCustomer([FromBody] CustomerDto customerDto)
         {
-            var model = new RegisterModel()
+            var model = new Register()
             {
                 ConfirmPassword = customerDto.ConfirmPassword,
                 Email = customerDto.Email,

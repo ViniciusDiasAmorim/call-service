@@ -14,7 +14,7 @@ namespace CallServiceFlow.Services
             _userManager = userManager;
         }
 
-        public async Task<(bool ok, string message)> Register(RegisterModel model, string role)
+        public async Task<(bool ok, string message)> Register(Register model, string role)
         {
             var validations = ValidateRegisterModel(model);
 
@@ -39,7 +39,7 @@ namespace CallServiceFlow.Services
             return (true, "Usuário registrado com sucesso!");
         }
 
-        public (bool ok, string message)ValidateRegisterModel(RegisterModel model)
+        public (bool ok, string message)ValidateRegisterModel(Register model)
         {
             if (string.IsNullOrEmpty(model.Email))
                 return (false, "Email não pode ser vazio");

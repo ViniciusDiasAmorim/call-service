@@ -26,7 +26,7 @@ namespace CallServiceFlow.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateTechnical(TechnicalDto techinicalDto)
         {
-            var model = new RegisterModel()
+            var model = new Register()
             {
                 Name = techinicalDto.Name,
                 Email = techinicalDto.Email,

@@ -2,7 +2,7 @@
 
 namespace CallServiceFlow.Model
 {
-    public class LoginModel
+    public class Login
     {
         [Required]
         [EmailAddress]
