@@ -1,5 +1,4 @@
 ﻿using CallServiceFlow.Model.Enums;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CallServiceFlow.Model
 {
@@ -14,7 +13,7 @@ namespace CallServiceFlow.Model
         public int TechnicalId { get; set; }
         public DateTime CreationDate { get; set; }
         public DateTime? CompletionDeadline { get; set; }
-        public bool Active { get; set; } = true;    
+        public bool Active { get; set; } = true;
 
         public virtual Customer Customer { get; set; }
         public virtual Technical Technical { get; set; }

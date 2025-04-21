@@ -1,6 +1,4 @@
-﻿using CallServiceFlow.Dto.Tickets;
-using CallServiceFlow.Dto.TicketsDTO;
-using CallServiceFlow.Model;
+﻿using CallServiceFlow.Model;
 
 namespace CallServiceFlow.Repository.Interfaces
 {
@@ -13,6 +11,5 @@ namespace CallServiceFlow.Repository.Interfaces
         Task<int> GetActiveTicketsCountByTechnicalAsync(int technicalId);
         Task<Technical> GetTechnicalByIdAsync(int technicalId);
         void UpdateTicket(Ticket ticket);
-        Task SaveChangesAsync();
     }
 }

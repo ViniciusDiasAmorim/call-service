@@ -1,6 +1,4 @@
 ﻿using CallServiceFlow.Context;
-using CallServiceFlow.Dto.Tickets;
-using CallServiceFlow.Dto.TicketsDTO;
 using CallServiceFlow.Model;
 using CallServiceFlow.Model.Enums;
 using CallServiceFlow.Repository.Interfaces;
@@ -54,11 +52,6 @@ namespace CallServiceFlow.Repository
         public void UpdateTicket(Ticket ticket)
         {
             _context.Tickets.Update(ticket);
-        }
-
-        public async Task SaveChangesAsync()
-        {
-            await _context.SaveChangesAsync();
         }
     }
 }

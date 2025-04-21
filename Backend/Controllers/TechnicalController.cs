@@ -1,10 +1,7 @@
 ﻿using CallServiceFlow.Dto.TechnicalDTO;
 using CallServiceFlow.Model;
-using CallServiceFlow.Repository;
-using CallServiceFlow.Repository.Interfaces;
-using CallServiceFlow.Services;
+using CallServiceFlow.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CallServiceFlow.Controllers
@@ -13,12 +10,12 @@ namespace CallServiceFlow.Controllers
     [ApiController]
     public class TechnicalController : ControllerBase
     {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly UserRegistrationService _userRegistrationService;
+        private readonly ITechnicalService _technicalService;
+        private readonly IUserRegistrationService _userRegistrationService;
 
-        public TechnicalController(IUnitOfWork unitOfWork, UserRegistrationService userRegistrationService)
+        public TechnicalController(ITechnicalService technicalService, IUserRegistrationService userRegistrationService)
         {
-            _unitOfWork = unitOfWork;
+            _technicalService = technicalService;
             _userRegistrationService = userRegistrationService;
         }
 
@@ -39,7 +36,7 @@ namespace CallServiceFlow.Controllers
             if (!resultAuthRegister.ok)
                 return BadRequest(resultAuthRegister.message);
 
-            var result = await _unitOfWork.TechnicalRepository.CreateTechnical(techinicalDto);
+            var result = await _technicalService.CreateTechnicalAsync(techinicalDto);
 
             if (result.ok)
                 return Created(result.message, result.responseDto);

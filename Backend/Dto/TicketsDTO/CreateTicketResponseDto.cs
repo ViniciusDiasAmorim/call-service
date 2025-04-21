@@ -1,5 +1,4 @@
 ﻿using CallServiceFlow.Model.Enums;
-using System.ComponentModel.DataAnnotations;
 
 namespace CallServiceFlow.Dto.Tickets
 {

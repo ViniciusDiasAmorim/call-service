@@ -1,7 +1,5 @@
 using CallServiceFlow.Context;
-using CallServiceFlow.Model;
 using CallServiceFlow.Repository.Interfaces;
-using System.Threading.Tasks;
 
 namespace CallServiceFlow.Repository
 {

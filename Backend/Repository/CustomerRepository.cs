@@ -36,7 +36,8 @@ namespace CallServiceFlow.Repository
 
                 return (true, "Cliente criado com sucesso", responseDto);
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 return (false, $"Erro ao criar cliente: {ex.Message}", null);
             }
 

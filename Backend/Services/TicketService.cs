@@ -2,7 +2,6 @@
 using CallServiceFlow.Dto.TicketsDTO;
 using CallServiceFlow.Model;
 using CallServiceFlow.Model.Enums;
-using CallServiceFlow.Repository;
 using CallServiceFlow.Repository.Interfaces;
 using CallServiceFlow.Services.Interfaces;
 
@@ -42,7 +41,7 @@ namespace CallServiceFlow.Services
             };
 
             await _unitOfWork.TicketRepository.AddTicketAsync(ticket);
-            await _unitOfWork.TicketRepository.SaveChangesAsync();
+            await _unitOfWork.Commit();
 
             var responseDto = new CreateTicketResponseDto
             {
@@ -68,7 +67,7 @@ namespace CallServiceFlow.Services
             ticket.Status = statusDto.NewStatus;
 
             _unitOfWork.TicketRepository.UpdateTicket(ticket);
-            await _unitOfWork.TicketRepository.SaveChangesAsync();
+            await _unitOfWork.Commit();
 
             return (true, "Chamado atualizado com sucesso");
         }
@@ -121,7 +120,7 @@ namespace CallServiceFlow.Services
 
             ticket.Active = false;
             _unitOfWork.TicketRepository.UpdateTicket(ticket);
-            await _unitOfWork.TicketRepository.SaveChangesAsync();
+            await _unitOfWork.Commit();
 
             return (true, "Ticket deleted successfully");
         }

@@ -1,8 +1,6 @@
 ﻿using CallServiceFlow.Model;
-using CallServiceFlow.Repository.Interfaces;
 using CallServiceFlow.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
 
 namespace CallServiceFlow.Services
 {
@@ -40,11 +38,11 @@ namespace CallServiceFlow.Services
             return (true, "Usuário registrado com sucesso!");
         }
 
-        private (bool ok, string message)ValidateRegisterModel(Register model)
+        private (bool ok, string message) ValidateRegisterModel(Register model)
         {
             if (string.IsNullOrEmpty(model.Email))
                 return (false, "Email não pode ser vazio");
-           
+
             if (string.IsNullOrEmpty(model.Password))
                 return (false, "Senha não pode ser vazia");
 
@@ -53,7 +51,7 @@ namespace CallServiceFlow.Services
 
             if (model.Password != model.ConfirmPassword)
                 return (false, "As senhas não são iguais");
-            
+
 
             return (true, null);
         }

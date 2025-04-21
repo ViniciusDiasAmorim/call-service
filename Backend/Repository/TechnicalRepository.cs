@@ -1,5 +1,4 @@
 ﻿using CallServiceFlow.Context;
-using CallServiceFlow.Dto.TechnicalDTO;
 using CallServiceFlow.Model;
 using CallServiceFlow.Repository.Interfaces;
 
@@ -14,38 +13,9 @@ namespace CallServiceFlow.Repository
             _context = context;
         }
 
-        public async Task<(bool, string, TechnicalResponseDto)> CreateTechnical(TechnicalDto techinicalDto)
+        public async Task AddTechnicalAsync(Technical techinical)
         {
-            var techinical = new Technical()
-            {
-                Name = techinicalDto.Name,
-                Email = techinicalDto.Email,
-                CreationDate = DateTime.Now,
-                Active = true,
-                MaxTickets = techinicalDto.MaxCalls ?? 5,
-                LastAccess = null
-            };
-            
-            try
-            {
-                await _context.Technicals.AddAsync(techinical);
-                await _context.SaveChangesAsync();
-
-                var responseDto = new TechnicalResponseDto()
-                {
-                    Id = techinical.Id,
-                    Name = techinical.Name,
-                    Email = techinical.Email,
-                    MaxCalls = techinical.MaxTickets
-                };
-                
-                return (true, "Tecnico criado com sucesso", responseDto);
-            }
-            catch (Exception ex)
-            {
-                return (false, $"Erro ao criar tecnico: {ex.Message}", null);
-            }
-
+            await _context.AddAsync(techinical);
         }
 
     }

@@ -1,16 +1,15 @@
 using CallServiceFlow.Context;
+using CallServiceFlow.Infrastructure;
+using CallServiceFlow.Model;
+using CallServiceFlow.Repository;
+using CallServiceFlow.Repository.Interfaces;
 using CallServiceFlow.Services;
+using CallServiceFlow.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using BCrypt.Net;
-using CallServiceFlow.Model;
-using CallServiceFlow.Repository.Interfaces;
-using CallServiceFlow.Repository;
-using CallServiceFlow.Services.Interfaces;
-using CallServiceFlow.Infrastructure;
 
 namespace CallServiceFlow
 {
@@ -28,6 +27,7 @@ namespace CallServiceFlow
             builder.Services.AddScoped<IUserRegistrationService, UserRegistrationService>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<ITicketService, TicketService>();
+            builder.Services.AddScoped<ITechnicalService, TechnicalService>();
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {

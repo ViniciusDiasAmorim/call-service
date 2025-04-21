@@ -1,6 +1,4 @@
-﻿using CallServiceFlow.Model;
-
-namespace CallServiceFlow.Repository.Interfaces
+﻿namespace CallServiceFlow.Repository.Interfaces
 {
     public interface IUnitOfWork
     {
