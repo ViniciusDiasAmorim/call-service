@@ -46,5 +46,20 @@ namespace CallServiceFlow.Services
                 return (false, $"Erro ao criar tecnico: {ex.Message}", null);
             }
         }
+
+        public async Task<(bool ok, string message)> DeleteTechinical(int id)
+        {
+            var technical = await _unitOfWork.TechnicalRepository.GetByIdAsync(id); 
+
+            if (technical == null)
+                return (false, "Tecnico não encontrado");
+            
+            technical.Active = false;
+
+            await _unitOfWork.TechnicalRepository.UpdateAsync(technical);
+            await _unitOfWork.Commit();
+
+            return (true, "Tecnico deletado com sucesso");
+        }
     }
 }

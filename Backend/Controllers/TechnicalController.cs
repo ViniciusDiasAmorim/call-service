@@ -43,5 +43,18 @@ namespace CallServiceFlow.Controllers
             else
                 return BadRequest(result.message);
         }
+
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> DeleteTechnical(int id)
+        {
+            var result = await _technicalService.DeleteTechinical(id);
+
+            if(result.ok)
+                return Ok(result.message);
+            else
+                return BadRequest(result.message);
+        }
+
     }
 }
