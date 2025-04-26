@@ -42,5 +42,21 @@ namespace CallServiceFlow.Services
                 return (false, $"Erro ao criar cliente: {ex.Message}", null);
             }
         }
+
+        public async Task<(bool ok, string message)> DeleteCustomer(int id)
+        {
+            var customer = await _unitOfWork.CustomerRepository.GetByIdAsync(id);
+
+            if (customer == null)
+                return (false, "Cliente não encontrado");
+
+            customer.IsActive = false;
+
+            await _unitOfWork.CustomerRepository.UpdateAsync(customer);
+            await _unitOfWork.Commit();
+
+            return (true, "Cliente excluído com sucesso");
+
+        }
     }
 }

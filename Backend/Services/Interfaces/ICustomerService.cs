@@ -5,5 +5,6 @@ namespace CallServiceFlow.Services.Interfaces
     public interface ICustomerService
     {
         Task<(bool ok, string message, CustomerResponseDto responseDto)> CreateCustomer(CustomerDto customerDto);
+        Task<(bool ok, string message)> DeleteCustomer(int id);
     }
 }

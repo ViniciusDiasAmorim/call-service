@@ -3,6 +3,7 @@ using CallServiceFlow.Model;
 using CallServiceFlow.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace CallServiceFlow.Controllers
 {
@@ -17,6 +18,18 @@ namespace CallServiceFlow.Controllers
         {
             _customerService = customerService;
             _userRegistrationService = userRegistrationService;
+        }
+
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> DeleteCustomer(int id)
+        {
+            var result = await  _customerService.DeleteCustomer(id);
+
+            if(result.ok)
+                return Ok(result.message);
+            else
+                return BadRequest(result.message);
         }
 
         [HttpPost]
