@@ -33,6 +33,8 @@ namespace CallServiceFlow.Services
             if (!result.Succeeded)
                 return (false, result.Errors.FirstOrDefault().Description);
 
+            await _userManager.GenerateEmailConfirmationTokenAsync(user);
+
             await _userManager.AddToRoleAsync(user, role);
 
             return (true, "Usuário registrado com sucesso!");

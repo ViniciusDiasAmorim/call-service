@@ -116,13 +116,13 @@ namespace CallServiceFlow.Services
             var ticket = await _unitOfWork.TicketRepository.GetTicketByIdAsync(id);
 
             if (ticket == null)
-                return (false, "Ticket not found");
+                return (false, "Ticket não encontrado");
 
             ticket.Active = false;
             _unitOfWork.TicketRepository.UpdateTicket(ticket);
             await _unitOfWork.Commit();
 
-            return (true, "Ticket deleted successfully");
+            return (true, "Ticket deletado com sucesso.");
         }
 
         public async Task<IEnumerable<TicketDto>> GetTicketsByTechnicalAsync(int technicalId)
