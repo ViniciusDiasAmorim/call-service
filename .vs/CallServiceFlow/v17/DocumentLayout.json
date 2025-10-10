@@ -1,28 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|solutionrelative:backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\backend\\services\\userregistrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|solutionrelative:backend\\services\\userregistrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\backend\\controllers\\technicalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|solutionrelative:backend\\controllers\\technicalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\backend\\services\\technicalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|solutionrelative:backend\\services\\technicalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|c:\\users\\vichi\\desktop\\call-service\\callserviceflow\\backend\\services\\interfaces\\itechnicalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D15C330-5A27-4331-B55D-DA21C0B1B033}|Backend\\CallServiceFlow.csproj|solutionrelative:backend\\services\\interfaces\\itechnicalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,74 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Backend\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Backend\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAIwBYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T01:06:19.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserRegistrationService.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Services\\UserRegistrationService.cs",
-              "RelativeDocumentMoniker": "Backend\\Services\\UserRegistrationService.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Services\\UserRegistrationService.cs*",
-              "RelativeToolTip": "Backend\\Services\\UserRegistrationService.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwCIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T00:42:38.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TechnicalService.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Services\\TechnicalService.cs",
-              "RelativeDocumentMoniker": "Backend\\Services\\TechnicalService.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Services\\TechnicalService.cs",
-              "RelativeToolTip": "Backend\\Services\\TechnicalService.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowD0AAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T02:04:43.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ITechnicalService.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Services\\Interfaces\\ITechnicalService.cs",
-              "RelativeDocumentMoniker": "Backend\\Services\\Interfaces\\ITechnicalService.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Services\\Interfaces\\ITechnicalService.cs",
-              "RelativeToolTip": "Backend\\Services\\Interfaces\\ITechnicalService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T02:04:04.408Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TechnicalController.cs",
-              "DocumentMoniker": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Controllers\\TechnicalController.cs",
-              "RelativeDocumentMoniker": "Backend\\Controllers\\TechnicalController.cs",
-              "ToolTip": "C:\\Users\\vichi\\Desktop\\call-service\\CallServiceFlow\\Backend\\Controllers\\TechnicalController.cs",
-              "RelativeToolTip": "Backend\\Controllers\\TechnicalController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCEAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T02:03:14.502Z",
-              "EditorCaption": ""
             }
           ]
         }
